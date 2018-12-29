@@ -8,7 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
+@SpringBootApplication // this annotation by DEFAULT is going to do a Component Scan from 'hellspawn287.spring.dependencyinjection.dependency_injection' path.
+//@ComponentScan(basePackages = {"hellspawn287.spring.dependencyinjection"}) is helpful when you declare something outside the Spring Boot Structure. You can tell Spring to scan specific package or packages.
 public class DependencyInjectionApplication {
 
     public static void main(String[] args) {
